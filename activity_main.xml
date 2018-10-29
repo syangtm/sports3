@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/layout"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Team A"
+                    android:textSize="30dp"/>
+
+                <TextView
+                    android:id="@+id/ascore"
+                    android:layout_below="@id/a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:text="0"
+                    android:textSize="50dp"/>
+
+                <Button
+                    android:id="@+id/athree"
+                    android:layout_below="@id/ascore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:onClick="incrementA1"
+                    android:text="+ 1"/>
+
+                <Button
+                    android:id="@+id/atwo"
+                    android:layout_below="@id/athree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:onClick="incrementA2"
+                    android:text="+ 2"/>
+
+                <Button
+                    android:id="@+id/aone"
+                    android:layout_below="@id/atwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:onClick="decrementA"
+                    android:text="- 1"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Team B"
+                    android:gravity="center_horizontal"
+                    android:textSize="30dp"/>
+
+                <TextView
+                    android:id="@+id/bscore"
+                    android:layout_below="@id/b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:text="0"
+                    android:gravity="center_horizontal"
+                    android:textSize="50dp"/>
+
+                <Button
+                    android:id="@+id/bthree"
+                    android:layout_below="@id/bscore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:onClick="incrementB1"
+                    android:text="+ 1"/>
+
+                <Button
+                    android:id="@+id/btwo"
+                    android:layout_below="@id/bthree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:onClick="incrementB2"
+                    android:text="+ 2"/>
+
+                <Button
+                    android:id="@+id/bone"
+                    android:layout_below="@id/btwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:onClick="decrementB"
+                    android:text="- 1"/>
+            </RelativeLayout>
+        </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout1"
+        android:layout_below="@id/layout"
+        android:gravity="center">
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="reset"
+            android:text="RESET"/>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
